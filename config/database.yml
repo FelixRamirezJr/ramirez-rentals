@@ -75,6 +75,4 @@ test:
 #
 production:
   <<: *default
-  database: ramirez_rentals_production
-  username: ramirez_rentals
-  password: <%= ENV['RAMIREZ_RENTALS_DATABASE_PASSWORD'] %>
+  url: <%= ENV['DATABASE_URL'] %>
