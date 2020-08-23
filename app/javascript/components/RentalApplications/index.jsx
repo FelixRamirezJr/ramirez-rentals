@@ -1,8 +1,20 @@
-import React from "react";
+import React, { useState } from "react";
 import Form from "./Form";
-import { Grid, Paper } from "@material-ui/core";
+import Confirmation from "./Confirmation";
+import { Grid } from "@material-ui/core";
 
 const Index = (props) => {
+  // Hooks
+  const [submitted, setSubmitted] = useState(false);
+
+  // Content
+  let content = null;
+  if (submitted) {
+    content = <Confirmation />;
+  } else {
+    content = <Form setSubmitted={setSubmitted} />;
+  }
+
   return (
     <Grid
       container
@@ -12,9 +24,7 @@ const Index = (props) => {
       justify="center"
       style={{ minHeight: "100vh" }}
     >
-      <Paper elevation={3}>
-        <Form />
-      </Paper>
+      {content}
     </Grid>
   );
 };
