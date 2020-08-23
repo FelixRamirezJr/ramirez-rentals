@@ -3,7 +3,9 @@ class RentalApplicationsController < ApplicationController
     end
 
     def create
-        rental_application = RentalApplication.create(rental_application_params)
+        # @TODO - Update hardcoded string to take in a parameter for room number and home
+        params = rental_application_params.merge({home: 'Greenway Room #1'})
+        rental_application = RentalApplication.create(params)
         RentalApplicationNotifierMailer.new_application(rental_application).deliver
         head :ok
     end
