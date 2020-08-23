@@ -53,6 +53,7 @@ const Form = ({ setSubmitted }) => {
   const [backgroundCheck, setBackgroundCheck] = useState(false);
   const [creditScore, setCreditScore] = useState(false);
   const [leaseConfirm, setLeaseConfirm] = useState(false);
+  const [onlinePayment, setOnlinePayment] = useState(false) 
 
   const classes = useStyles();
 
@@ -65,6 +66,7 @@ const Form = ({ setSubmitted }) => {
     isEmpty(numberOfTentants) ||
     backgroundCheck !== true ||
     creditScore !== true ||
+    onlinePayment !== true ||
     leaseConfirm !== true;
 
   const submit = () => {
@@ -192,7 +194,20 @@ const Form = ({ setSubmitted }) => {
                 color="primary"
               />
             }
-            label="I have a credit score of 650 or above"
+            label="I have a credit score of 650 or can provide proof of financial stability"
+          />
+        </Grid>
+        <Grid item xs={12}>
+          <FormControlLabel
+            className={classes.inputs}
+            control={
+              <Checkbox
+                checked={onlinePayment}
+                onChange={(e) => setOnlinePayment(e.target.checked)}
+                color="primary"
+              />
+            }
+            label="I will be able to make rental payments using paperless services such as: Cozy or Venmo"
           />
         </Grid>
         <Grid item xs={12}>
