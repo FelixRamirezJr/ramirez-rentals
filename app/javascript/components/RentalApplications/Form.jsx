@@ -13,7 +13,7 @@ import {
   Checkbox,
   Typography,
 } from "@material-ui/core";
-import axios from 'axios'
+import axios from "axios";
 
 const useStyles = makeStyles({
   root: {
@@ -83,8 +83,8 @@ const Form = ({ setSubmitted }) => {
     setSubmitted(true);
 
     // @TODO - Move to Util Functions
-    const token = document.querySelector('[name=csrf-token]').content
-    axios.defaults.headers.common['X-CSRF-TOKEN'] = token
+    const token = document.querySelector("[name=csrf-token]").content;
+    axios.defaults.headers.common["X-CSRF-TOKEN"] = token;
 
     axios
       .post("/rental_applications", data)
@@ -221,7 +221,8 @@ const Form = ({ setSubmitted }) => {
             label={
               <Typography>
                 I agree to pay for a
-                <strong> $39.99 Background and Credit Check </strong> for each tenant over 18 years old (will be done at a later time)
+                <strong> $39.99 Background and Credit Check </strong> for each
+                tenant over 18 years old (will be done at a later time)
               </Typography>
             }
           />

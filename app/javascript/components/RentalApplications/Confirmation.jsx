@@ -22,8 +22,8 @@ const Confirmation = () => {
       <CardContent className={classes.content}>
         <h4>
           We will review your application and contact you as soon as possible.
-          Once it has been reviewed, we will reach out to schedule a for you to
-          view the rental
+          Once it has been reviewed, we will reach out with the next steps (or
+          schedule a showing if you have not seen the rental yet)
         </h4>
         <h4> Thank you and have a great day! </h4>
       </CardContent>
