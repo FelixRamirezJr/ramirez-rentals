@@ -85,7 +85,7 @@ const Form = ({ setSubmitted }) => {
     // @TODO - Move to Util Functions
     const token = document.querySelector('[name=csrf-token]').content
     axios.defaults.headers.common['X-CSRF-TOKEN'] = token
-    
+
     axios
       .post("/rental_applications", data)
       .then(function (response) {
@@ -145,7 +145,7 @@ const Form = ({ setSubmitted }) => {
             fullWidth
             className={classes.inputs}
             label="Desired Move In Date"
-            placeholder="Desired Move In date"
+            placeholder="Desired Move In Date"
             required
             onChange={(e) => setLeaseAgreement(e.target.value)}
           />
@@ -167,6 +167,7 @@ const Form = ({ setSubmitted }) => {
             label="Number of Tenants"
             placeholder="Number of Tenants"
             required
+            type="number"
             onChange={(e) => setNumberOfTenants(e.target.value)}
           />
         </Grid>
@@ -220,8 +221,7 @@ const Form = ({ setSubmitted }) => {
             label={
               <Typography>
                 I agree to pay for a
-                <strong> $39.99 Background and Credit Check </strong> to confirm
-                my eligibility (will be done at a later time)
+                <strong> $39.99 Background and Credit Check </strong> for each tenant over 18 years old (will be done at a later time)
               </Typography>
             }
           />

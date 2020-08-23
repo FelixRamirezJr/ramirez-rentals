@@ -3,7 +3,8 @@ class RentalApplicationsController < ApplicationController
     end
 
     def create
-        @rental_application = RentalApplication.create(rental_application_params)
+        rental_application = RentalApplication.create(rental_application_params)
+        RentalApplicationNotifierMailer.new_application(rental_application).deliver
         head :ok
     end
 
