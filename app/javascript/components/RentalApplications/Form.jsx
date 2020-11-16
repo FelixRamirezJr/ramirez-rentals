@@ -106,7 +106,7 @@ const Form = ({ setSubmitted }) => {
         className={classes.title}
         title={
           <>
-            <h3> Rental Application For Room #1 </h3>
+            <h3> Rental Application For Room #2 </h3>
             <h6> 410 E Greenway Drive, Tempe Arizona </h6>
           </>
         }
