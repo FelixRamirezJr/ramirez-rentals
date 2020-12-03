@@ -194,7 +194,7 @@ const Form = ({ setSubmitted }) => {
                 color="primary"
               />
             }
-            label="I have a credit score of 650 or can provide proof of financial stability"
+            label="I have a credit score of 650 and above OR can provide proof of financial stability"
           />
         </Grid>
         <Grid item xs={12}>
