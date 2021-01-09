@@ -6,7 +6,8 @@ class RentalApplicationsController < ApplicationController
         # @TODO - Update hardcoded string to take in a parameter for room number and home
         params = rental_application_params.merge({home: 'Greenway Room #2'})
         rental_application = RentalApplication.create(params)
-        RentalApplicationNotifierMailer.new_application(rental_application).deliver
+        # @TODO - Resolve broken mailer, password and username is incorrect?
+        # RentalApplicationNotifierMailer.new_application(rental_application).deliver
         head :ok
     end
 
