@@ -106,8 +106,8 @@ const Form = ({ setSubmitted }) => {
         className={classes.title}
         title={
           <>
-            <h3> Rental Application For Single Family Home </h3>
-            <h6> 8108 Almondsbury Ln, Austin Texas </h6>
+            <h3> Rental Application </h3>
+            <h6> 8108 Almondsbury Lane, Austin Texas </h6>
           </>
         }
       />
