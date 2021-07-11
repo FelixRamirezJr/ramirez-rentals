@@ -106,8 +106,8 @@ const Form = ({ setSubmitted }) => {
         className={classes.title}
         title={
           <>
-            <h3> Rental Application For Room #1 </h3>
-            <h6> 410 E Greenway Drive, Tempe Arizona </h6>
+            <h3> Rental Application For Single Family Home </h3>
+            <h6> 8108 Almondsbury Ln, Austin Texas </h6>
           </>
         }
       />
@@ -194,7 +194,7 @@ const Form = ({ setSubmitted }) => {
                 color="primary"
               />
             }
-            label="I have a credit score of 650 and above OR can provide proof of financial stability"
+            label="I have a credit score of 680 and above and can provide proof of financial stability"
           />
         </Grid>
         <Grid item xs={12}>
@@ -207,7 +207,7 @@ const Form = ({ setSubmitted }) => {
                 color="primary"
               />
             }
-            label="I will be able to make rental payments using online services such as: Cozy or Venmo"
+            label="I will be able to make rental payments using online services such as: Apartments.com or Venmo"
           />
         </Grid>
         <Grid item xs={12}>
@@ -220,7 +220,7 @@ const Form = ({ setSubmitted }) => {
                 color="primary"
               />
             }
-            label="I agree to at least a 6 month lease (will be signed at a later date)"
+            label="I agree to at least a 1 year lease (will be signed at a later date)"
           />
         </Grid>
         <Grid item xs={12}>
