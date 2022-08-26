@@ -207,7 +207,7 @@ const Form = ({ setSubmitted }) => {
                 color="primary"
               />
             }
-            label="I will be able to make rental payments using online services such as: Apartments.com or Venmo"
+            label="I will be able to make rental payments using online services such as: Apartments.com"
           />
         </Grid>
         <Grid item xs={12}>
@@ -220,7 +220,7 @@ const Form = ({ setSubmitted }) => {
                 color="primary"
               />
             }
-            label="I agree to at least a 1 year lease (will be signed at a later date)"
+            label="I agree to at least a 6 month lease (will be signed at a later date)"
           />
         </Grid>
         <Grid item xs={12}>
