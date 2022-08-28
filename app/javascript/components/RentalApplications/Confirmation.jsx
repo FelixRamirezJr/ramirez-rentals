@@ -21,11 +21,14 @@ const Confirmation = () => {
       />
       <CardContent className={classes.content}>
         <h4>
-          We will review your application and contact you as soon as possible.
-          Once it has been reviewed, we will reach out with the next steps (or
-          schedule a showing if you have not seen the rental yet)
+          Thank you for providing this information. You may now schedule your
+          viewing through our Calendly link below
         </h4>
-        <h4> Thank you and have a great day! </h4>
+        <h4>
+          <a href="https://calendly.com/almondsbury/viewing" target="_blank">
+            Schedule with Calendly
+          </a>
+        </h4>
       </CardContent>
     </Card>
   );

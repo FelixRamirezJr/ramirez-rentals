@@ -10,7 +10,7 @@ class RentalApplicationsController < ApplicationController
         # RentalApplicationNotifierMailer.new_application(rental_application).deliver
         head :ok
     end
-
+    
     private 
 
     def rental_application_params
