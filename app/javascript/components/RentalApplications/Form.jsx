@@ -53,7 +53,7 @@ const Form = ({ setSubmitted }) => {
   const [backgroundCheck, setBackgroundCheck] = useState(false);
   const [creditScore, setCreditScore] = useState(false);
   const [leaseConfirm, setLeaseConfirm] = useState(false);
-  const [onlinePayment, setOnlinePayment] = useState(false) 
+  const [onlinePayment, setOnlinePayment] = useState(false);
 
   const classes = useStyles();
 
@@ -194,7 +194,7 @@ const Form = ({ setSubmitted }) => {
                 color="primary"
               />
             }
-            label="I have a credit score of 680 and above and can provide proof of financial stability"
+            label="I have a credit score of 650 and above and can provide proof of financial stability"
           />
         </Grid>
         <Grid item xs={12}>
