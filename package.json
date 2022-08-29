@@ -1,5 +1,5 @@
 {
-  "name": "ramirez_rentals",
+  "name": "frj_rentals",
   "private": true,
   "scripts": {
     "prettier": "prettier --write app/"
